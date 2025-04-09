@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabela Periódica</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid mt-4">
+        <h1 class="text-center mb-4">Tabela Periódica</h1>
+        <div class="grid-container">
+            <div class="grid-container">
+                <!-- Linha 1 -->
+                <div class="element hydrogen-color">
+                    <span>1</span>
+                    <p class="first-element-text">H</p>
+                    <p class="text-element">Hidrogênio</p>
+                </div>
+                <div class="empty" style="grid-column: span 16;"></div>
+                <div class="element noble">
+                    <span>2</span>
+                    <p class="first-element-text">He</p>
+                    <p class="text-element">Hélio</p>
+                </div>
+                
+                <!-- Linha 2 -->
+                <div class="element alkali">
+                    <span>3</span>
+                    <p class="first-element-text">Li</p>
+                    <p class="text-element">Lítio</p>
+                </div>
+                <div class="element alkaline">
+                    <span>4</span>
+                    <p class="first-element-text">Be</p>
+                    <p class="text-element">Berílio</p>
+                </div>
+                <div class="empty" style="grid-column: span 10;"></div>
+                <div class="element outros">
+                    <span>5</span>
+                    <p class="first-element-text">B</p>
+                    <p class="text-element">Boro</p>
+                </div>
+                <div class="element outros">
+                    <span>6</span>
+                    <p class="first-element-text">C</p>
+                    <p class="text-element">Carbono</p>
+                </div>
+                <div class="element outros">
+                    <span>7</span>
+                    <p class="first-element-text">N</p>
+                    <p class="text-element">Nitrogênio</p>
+                </div>
+                <div class="element outros">
+                    <span>8</span>
+                    <p class="first-element-text">O</p>
+                    <p class="text-element">Oxigênio</p>
+                </div>
+                <div class="element outros">
+                    <span>9</span>
+                    <p class="first-element-text">F</p>
+                    <p class="text-element">Flúor</p>
+                </div>
+                <div class="element noble">
+                    <span>10</span>
+                    <p class="first-element-text">Ne</p>
+                    <p class="text-element">Neônio</p>
+                </div>
+            
+                <!-- Linha 3 -->
+                <div class="element alkali">
+                    <span>11</span>
+                    <p class="first-element-text">Na</p>
+                    <p class="text-element">Sódio</p>
+                </div>
+                <div class="element alkaline">
+                    <span>12</span>
+                    <p class="first-element-text">Mg</p>
+                    <p class="text-element">Magnésio</p>
+                </div>
+                <div class="empty" style="grid-column: span 10;"></div>
+                <div class="element basic">
+                    <span>13</span>
+                    <p class="first-element-text">Al</p>
+                    <p class="text-element">Alumínio</p>
+                </div>
+                <div class="element outros">
+                    <span>14</span>
+                    <p class="first-element-text">Si</p>
+                    <p class="text-element">Silício</p>
+                </div>
+                <div class="element outros">
+                    <span>15</span>
+                    <p class="first-element-text">P</p>
+                    <p class="text-element">Fósforo</p>
+                </div>
+                <div class="element outros">
+                    <span>16</span>
+                    <p class="first-element-text">S</p>
+                    <p class="text-element">Enxofre</p>
+                </div>
+                <div class="element outros">
+                    <span>17</span>
+                    <p class="first-element-text">Cl</p>
+                    <p class="text-element">Cloro</p>
+                </div>
+                <div class="element noble">
+                    <span>18</span>
+                    <p class="first-element-text">Ar</p>
+                    <p class="text-element">Argônio</p>
+                </div>
+                
+                <!-- Linha 4 -->
+                <div class="element alkali">
+                    <span>19</span>
+                    <p class="first-element-text">K</p>
+                    <p class="text-element">Potássio</p>
+                </div>
+                <div class="element alkaline">
+                    <span>20</span>
+                    <p class="first-element-text">Ca</p>
+                    <p class="text-element">Cálcio</p>
+                </div>
+                <div class="element transition">
+                    <span>21</span>
+                    <p class="first-element-text">Sc</p>
+                    <p class="text-element">Escândio</p>
+                </div>
+                <div class="element transition">
+                    <span>22</span>
+                    <p class="first-element-text">Ti</p>
+                    <p class="text-element">Titânio</p>
+                </div>
+                <div class="element transition">
+                    <span>23</span>
+                    <p class="first-element-text">V</p>
+                    <p class="text-element">Vanádio</p>
+                </div>
+                <div class="element transition">
+                    <span>24</span>
+                    <p class="first-element-text">Cr</p>
+                    <p class="text-element">Cromo</p>
+                </div>
+                <div class="element transition">
+                    <span>25</span>
+                    <p class="first-element-text">Mn</p>
+                    <p class="text-element">Manganês</p>
+                </div>
+                <div class="element transition">
+                    <span>26</span>
+                    <p class="first-element-text">Fe</p>
+                    <p class="text-element">Ferro</p>
+                </div>
+                <div class="element transition">
+                    <span>27</span>
+                    <p class="first-element-text">Co</p>
+                    <p class="text-element">Cobalto</p>
+                </div>
+                <div class="element transition">
+                    <span>28</span>
+                    <p class="first-element-text">Ni</p>
+                    <p class="text-element">Níquel</p>
+                </div>
+                <div class="element transition">
+                    <span>29</span>
+                    <p class="first-element-text">Cu</p>
+                    <p class="text-element">Cobre</p>
+                </div>
+                <div class="element transition">
+                    <span>30</span>
+                    <p class="first-element-text">Zn</p>
+                    <p class="text-element">Zinco</p>
+                </div>
+                <div class="element basic">
+                    <span>31</span>
+                    <p class="first-element-text">Ga</p>
+                    <p class="text-element">Gálio</p>
+                </div>
+                <div class="element outros">
+                    <span>32</span>
+                    <p class="first-element-text">Ge</p>
+                    <p class="text-element">Germânio</p>
+                </div>
+                <div class="element outros">
+                    <span>33</span>
+                    <p class="first-element-text">As</p>
+                    <p class="text-element">Arsênio</p>
+                </div>
+                <div class="element outros">
+                    <span>34</span>
+                    <p class="first-element-text">Se</p>
+                    <p class="text-element">Selênio</p>
+                </div>
+                <div class="element outros">
+                    <span>35</span>
+                    <p class="first-element-text">Br</p>
+                    <p class="text-element">Bromo</p>
+                </div>
+                <div class="element noble">
+                    <span>36</span>
+                    <p class="first-element-text">Kr</p>
+                    <p class="text-element">Criptônio</p>
+                </div>
+            
+                <!-- Linha 5 -->
+                <div class="element alkali">
+                    <span>37</span>
+                    <p class="first-element-text">Rb</p>
+                    <p class="text-element">Rubídio</p>
+                </div>
+                <div class="element alkaline">
+                    <span>38</span>
+                    <p class="first-element-text">Sr</p>
+                    <p class="text-element">Estrôncio</p>
+                </div>
+                <div class="element transition">
+                    <span>39</span>
+                    <p class="first-element-text">Y</p>
+                    <p class="text-element">Ítrio</p>
+                </div>
+                <div class="element transition">
+                    <span>40</span>
+                    <p class="first-element-text">Zr</p>
+                    <p class="text-element">Zircônio</p>
+                </div>
+                <div class="element transition">
+                    <span>41</span>
+                    <p class="first-element-text">Nb</p>
+                    <p class="text-element">Nióbio</p>
+                </div>
+                <div class="element transition">
+                    <span>42</span>
+                    <p class="first-element-text">Mo</p>
+                    <p class="text-element">Molibdênio</p>
+                </div>
+                <div class="element transition">
+                    <span>43</span>
+                    <p class="first-element-text">Tc</p>
+                    <p class="text-element">Tecnécio</p>
+                </div>
+                <div class="element transition">
+                    <span>44</span>
+                    <p class="first-element-text">Ru</p>
+                    <p class="text-element">Rutênio</p>
+                </div>
+                <div class="element transition">
+                    <span>45</span>
+                    <p class="first-element-text">Rh</p>
+                    <p class="text-element">Ródio</p>
+                </div>
+                <div class="element transition">
+                    <span>46</span>
+                    <p class="first-element-text">Pd</p>
+                    <p class="text-element">Paládio</p>
+                </div>
+                <div class="element transition">
+                    <span>47</span>
+                    <p class="first-element-text">Ag</p>
+                    <p class="text-element">Prata</p>
+                </div>
+                <div class="element transition">
+                    <span>48</span>
+                    <p class="first-element-text">Cd</p>
+                    <p class="text-element">Cádmio</p>
+                </div>
+                <div class="element basic">
+                    <span>49</span>
+                    <p class="first-element-text">In</p>
+                    <p class="text-element">Índio</p>
+                </div>
+                <div class="element basic">
+                    <span>50</span>
+                    <p class="first-element-text">Sn</p>
+                    <p class="text-element">Estanho</p>
+                </div>
+                <div class="element outros">
+                    <span>51</span>
+                    <p class="first-element-text">Sb</p>
+                    <p class="text-element">Antimônio</p>
+                </div>
+                <div class="element outros">
+                    <span>52</span>
+                    <p class="first-element-text">Te</p>
+                    <p class="text-element">Telúrio</p>
+                </div>
+                <div class="element outros">
+                    <span>53</span>
+                    <p class="first-element-text">I</p>
+                    <p class="text-element">Iodo</p>
+                </div>
+                <div class="element noble">
+                    <span>54</span>
+                    <p class="first-element-text">Xe</p>
+                    <p class="text-element">Xenônio</p>
+                </div>
+            
+                <!-- Linha 6 -->
+                <div class="element alkali">
+                    <span>55</span>
+                    <p class="first-element-text">Cs</p>
+                    <p class="text-element">Césio</p>
+                </div>
+                <div class="element alkaline">
+                    <span>56</span>
+                    <p class="first-element-text">Ba</p>
+                    <p class="text-element">Bário</p>
+                </div>
+                <div class="element lanthanide">
+                    <span>57-71</span>
+                    <p class="first-element-text ">La - Lu</p>
+                    <p class="text-element">*</p>
+                </div>
+                <div class="element transition">
+                    <span>72</span>
+                    <p class="first-element-text">Hf</p>
+                    <p class="text-element">Háfnio</p>
+                </div>
+                <div class="element transition">
+                    <span>73</span>
+                    <p class="first-element-text">Ta</p>
+                    <p class="text-element">Tântalo</p>
+                </div>
+                <div class="element transition">
+                    <span>74</span>
+                    <p class="first-element-text">W</p>
+                    <p class="text-element">Tungstênio</p>
+                </div>
+                <div class="element transition">
+                    <span>75</span>
+                    <p class="first-element-text">Re</p>
+                    <p class="text-element">Rênio</p>
+                </div>
+                <div class="element transition">
+                    <span>76</span>
+                    <p class="first-element-text">Os</p>
+                    <p class="text-element">Ósmio</p>
+                </div>
+                <div class="element transition">
+                    <span>77</span>
+                    <p class="first-element-text">Ir</p>
+                    <p class="text-element">Irídio</p>
+                </div>
+                <div class="element transition">
+                    <span>78</span>
+                    <p class="first-element-text">Pt</p>
+                    <p class="text-element">Platina</p>
+                </div>
+                <div class="element transition">
+                    <span>79</span>
+                    <p class="first-element-text">Au</p>
+                    <p class="text-element">Ouro</p>
+                </div>
+                <div class="element transition">
+                    <span>80</span>
+                    <p class="first-element-text">Hg</p>
+                    <p class="text-element">Mercúrio</p>
+                </div>
+                <div class="element basic">
+                    <span>81</span>
+                    <p class="first-element-text">Tl</p>
+                    <p class="text-element">Tálio</p>
+                </div>
+                <div class="element basic">
+                    <span>82</span>
+                    <p class="first-element-text">Pb</p>
+                    <p class="text-element">Chumbo</p>
+                </div>
+                <div class="element basic">
+                    <span>83</span>
+                    <p class="first-element-text">Bi</p>
+                    <p class="text-element">Bismuto</p>
+                </div>
+                <div class="element outros">
+                    <span>84</span>
+                    <p class="first-element-text">Po</p>
+                    <p class="text-element">Polônio</p>
+                </div>
+                <div class="element outros">
+                    <span>85</span>
+                    <p class="first-element-text">At</p>
+                    <p class="text-element">Astato</p>
+                </div>
+                <div class="element noble">
+                    <span>86</span>
+                    <p class="first-element-text">Rn</p>
+                    <p class="text-element">Radônio</p>
+                </div>
+            
+                <!-- Linha 7 -->
+                <div class="element alkali">
+                    <span>87</span>
+                    <p class="first-element-text">Fr</p>
+                    <p class="text-element">Frâncio</p>
+                </div>
+                <div class="element alkaline">
+                    <span>88</span>
+                    <p class="first-element-text">Ra</p>
+                    <p class="text-element">Rádio</p>
+                </div>
+                <div class="element actinide">
+                    <span>89-103</span>
+                    <p class="first-element-text">Ac - Lr</p>
+                    <p class="text-element">*</p>
+                </div>
+                <div class="element transition">
+                    <span>104</span>
+                    <p class="first-element-text">Rf</p>
+                    <p class="text-element">Rutherfórdio</p>
+                </div>
+                <div class="element transition">
+                    <span>105</span>
+                    <p class="first-element-text">Db</p>
+                    <p class="text-element">Dúbnio</p>
+                </div>
+                <div class="element transition">
+                    <span>106</span>
+                    <p class="first-element-text">Sg</p>
+                    <p class="text-element">Seabórgio</p>
+                </div>
+                <div class="element transition">
+                    <span>107</span>
+                    <p class="first-element-text">Bh</p>
+                    <p class="text-element">Bóhrio</p>
+                </div>
+                <div class="element transition">
+                    <span>108</span>
+                    <p class="first-element-text">Hs</p>
+                    <p class="text-element">Hássio</p>
+                </div>
+                <div class="element transition">
+                    <span>109</span>
+                    <p class="first-element-text">Mt</p>
+                    <p class="text-element">Meitnério</p>
+                </div>
+                <div class="element transition">
+                    <span>110</span>
+                    <p class="first-element-text">Ds</p>
+                    <p class="text-element">Darmstádio</p>
+                </div>
+                <div class="element transition">
+                    <span>111</span>
+                    <p class="first-element-text">Rg</p>
+                    <p class="text-element">Roentgênio</p>
+                </div>
+                <div class="element transition">
+                    <span>112</span>
+                    <p class="first-element-text">Cn</p>
+                    <p class="text-element">Copernício</p>
+                </div>
+                <div class="element basic">
+                    <span>113</span>
+                    <p class="first-element-text">Nh</p>
+                    <p class="text-element">Nihônio</p>
+                </div>
+                <div class="element basic">
+                    <span>114</span>
+                    <p class="first-element-text">Fl</p>
+                    <p class="text-element">Fleróvio</p>
+                </div>
+                <div class="element basic">
+                    <span>115</span>
+                    <p class="first-element-text">Mc</p>
+                    <p class="text-element">Moscóvio</p>
+                </div>
+                <div class="element basic">
+                    <span>116</span>
+                    <p class="first-element-text">Lv</p>
+                    <p class="text-element">Livermório</p>
+                </div>
+                <div class="element outros">
+                    <span>117</span>
+                    <p class="first-element-text">Ts</p>
+                    <p class="text-element">Tenesso</p>
+                </div>
+                <div class="element noble">
+                    <span>118</span>
+                    <p class="first-element-text">Og</p>
+                    <p class="text-element">Oganessônio</p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(10, auto);
+    gap: 5px;
+    padding: 20px;
+    max-width: 90vw;
+    margin: auto;
+}
+.element {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 90px;
+    position: relative;
+}
+
+.element span {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+.element p {
+    margin: 0;
+}
+
+.first-element-text {
+    font-size: 30px;
+}
+
+.empty {
+    background: transparent;
+}
+/* Cores por categoria */
+.hydrogen-color { background-color: #3b56a6;}
+.alkali { background-color: #7b5ba7; }
+.alkaline { background-color: #FFD166; }
+.transition { background-color: #f27eb2; }
+.basic { background-color: #6bc6ef; }
+.outros { background-color: #38b66b; }
+.noble { background-color: #d4ba0e; }
+.lanthanide { background-color: #ee3432; }
+.actinide { background-color: #a62439; }
+
+.lanthanide .first-element-text , .actinide .first-element-text 
+{
+    font-size: 22px;
+}
