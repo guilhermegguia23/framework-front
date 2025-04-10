@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #c80c44;
+}
+
+ul,li,ol
+{
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.bgc-card
+{
+    background-color: #eeeee4;
+    border-radius: 60% / 10%;  
+    padding: 1rem 0rem;
+}
+
+.paises-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.text-color-base
+{
+    color: #7f1732;
+    font-weight: bold;
+}
+
+.border
+{
+    display: inline-block;
+    height: 3px;
+    width: 90%;
+    background-color: gold;
+}
