@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dito Lambari</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg border border-b-1">
+            <a class="navbar-brand" href="#">
+                <img src="img/dito_lambari.png" alt="Dito Lambari" style="height: 120px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <section class="hero-section section">
+            <div class="container hero-content">
+                <h1 class="display-4">Bem-vindo ao Dito Lambari</h1>
+                <p class="lead">Onde o sabor da tradição encontra a frescura dos peixes.</p>
+                <a href="./sobre.html" class="btn btn-warning btn-lg hero-btn">Saiba Mais</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center footer-lambari container-fluid">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Dito Lambari - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+<script>
+    let arrayImg = ["background", "peixaria"];
+    let currentIndex = 0;
+
+    setInterval(() => {
+        changeImage();
+    }, 2000);
+
+    function changeImage() {
+        const nextIndex = pegarSequencia();
+        console.log(arrayImg[nextIndex]);
+        
+        $('.hero-section').css('background-image', `url("./img/${arrayImg[nextIndex]}.jpg")`);
+    }
+
+    function pegarSequencia() {
+        const valor = currentIndex;
+        currentIndex = (currentIndex + 1) % arrayImg.length;  // Vai reiniciar para 0 após chegar em 2
+        return valor;
+    }
+</script>
