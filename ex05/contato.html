@@ -47,22 +47,22 @@
         <form id="form-contato">
             <div class="form-group">
                 <label for="nome">Nome completo</label>
-                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" >
             </div>
     
             <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" >
             </div>
     
             <div class="form-group">
                 <label for="assunto">Assunto</label>
-                <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Motivo do contato" required>
+                <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Motivo do contato" >
             </div>
     
             <div class="form-group">
                 <label for="mensagem">Mensagem</label>
-                <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." ></textarea>
             </div>
     
             <button type="submit" class="btn btn-primary">Enviar</button>
@@ -80,3 +80,29 @@
 </body>
 
 </html>
+
+
+<script>
+
+    
+$(document).ready(function() {
+    
+
+    // Contact form submission
+    $('#form-contato').submit(function(event) {
+        event.preventDefault();
+        var nome = $('#nome').val();
+        var email = $('#email').val();
+        var mensagem = $('#mensagem').val();
+        if (nome && email && mensagem) {
+            alert('Obrigado por entrar em contato, ' + nome + '!');
+            $('#nome, #email, #mensagem').css('border-color', '');
+        } else {
+            if (!nome) $('#nome').css('border-color', 'red');
+            if (!email) $('#email').css('border-color', 'red');
+            if (!mensagem) $('#mensagem').css('border-color', 'red');
+            alert('Por favor, preencha todos os campos.');
+        }
+    });
+});
+</script>
